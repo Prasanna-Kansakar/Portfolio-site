@@ -1,119 +1,157 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .header {
-    background: #282c34;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #f0f0f0; /* Light text color for dark background */
+  background-color: #121212; /* Dark background color */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  color: white;
+  font-size: 1rem;
+}
+
+.section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.about {
+  background: #212121; /* Dark background for about section */
+}
+
+.skills {
+  background: #181818; /* Darker background for skills section */
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #fff; /* Border for the profile picture */
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.skill-card {
+  border: 1px solid #444; /* Light border for cards */
+  border-radius: 8px;
+  padding: 1rem;
+  background: #333; /* Dark background for skill cards */
+  color: #f0f0f0; /* Light text color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+.contact {
+  background: #212121; /* Dark background for contact section */
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-links li {
+  margin: 0.5rem 0;
+}
+
+.contact-links a {
+  color: #1e90ff; /* Light blue color for links */
+}
+
+.header {
+  background: #0d0d0d; /* Darker shade for header */
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background: #0d0d0d; /* Darker shade for footer */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 1rem;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .nav-links li a {
-    color: white;
-    font-size: 1rem;
-  }
-  
-  .section {
-    padding: 2rem 1rem;
-    text-align: center;
-  }
-  
-  .about {
-    background: #f4f4f4;
-  }
-  
-  .skills {
-    background: #fff;
-  }
-  
-  .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-  }
-  
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
-  }
-  
-  .skill-card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 1rem;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact {
-    background: #f4f4f4;
-  }
-  
-  .contact-links {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .contact-links li {
-    margin: 0.5rem 0;
-  }
-  
-  .contact-links a {
-    color: #007BFF;
-  }
-  
-  .footer {
-    background: #282c34;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .navbar {
       flex-direction: column;
       gap: 0.5rem;
-    }
-  
-    .skills-grid {
-      grid-template-columns: 1fr;
-    }
   }
-  
+
+  .skills-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* Button styles */
+.buttons {
+  margin-top: 10px;
+}
+
+/* Button styles */
+#readMoreBtn, #showLessBtn {
+  background-color: #333; /* Darker background for the buttons */
+  color: #f0f0f0; /* Light text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#readMoreBtn:hover, #showLessBtn:hover {
+  background-color: #555; /* Slightly lighter gray on hover */
+}
+
+/* Contact Links */
+.contact-links a {
+  color: #4CAF50; /* Green color for contact links */
+}
+
+.contact-links a:hover {
+  color: #81C784; /* Lighter green on hover */
+}
+

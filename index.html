@@ -3,36 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prasanna Ratna Kansakar</title>
+  <title>Prasanna Ratna Kansakar - Software Engineer</title>
   <link rel="stylesheet" href="public/css/style.css">
   <link rel="icon" type="image/png" href="public/images/logo.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
-    <h1 class="logo">MyPortfolio</h1>
+    <h1 class="logo">Prasanna Ratna Kansakar</h1>
+    <p class="subtitle">Software Engineer | Backend Specialist | Data Enthusiast</p>
   </header>
 
   <section id="about" class="section about">
     <img src="public/images/profile.jpg" alt="Profile Picture" class="profile-pic">
-    <h1>Hi, I'm Prasanna</h1>
-    <p>A passionate developer dedicated to creating amazing digital experiences.</p>
+    <h1>Hi, I'm Prasanna Ratna Kansakar</h1>
+    <p>
+      I am a software engineer with a passion for backend development, database management, coding, and continuous learning, with an enthusiasm for data analysis and machine learning.
+    </p>
   </section>
 
   <section id="skills" class="section skills">
     <h2>Top Skills</h2>
-    <div class="skills-grid">
+    <div class="skills-grid" id="skillsGrid">
       <div class="skill-card">
-        <h3>JavaScript</h3>
-        <p>Experience in modern frameworks like React, Angular, and Vue.</p>
+        <h3>C#</h3>
+        <p>Experienced in building robust backend systems and APIs using C#.</p>
       </div>
       <div class="skill-card">
+        <h3>Asp.Net</h3>
+        <p>Specialized in web development using the ASP.NET framework, including MVC and Web API.</p>
+      </div>
+      <div class="skill-card">
+        <h3>R</h3>
+        <p>Proficient in statistical analysis, data visualization, and machine learning using R.</p>
+      </div>
+      <div class="skill-card hidden">
+        <h3>PostgreSQL</h3>
+        <p>Experienced in creating, optimizing, and managing complex PostgreSQL database systems.</p>
+      </div>
+      <div class="skill-card hidden">
         <h3>Python</h3>
-        <p>Proficient in data analysis, machine learning, and web development.</p>
+        <p>Passionate about data analysis, machine learning, and automation using Python.</p>
       </div>
-      <div class="skill-card">
-        <h3>Full-Stack Development</h3>
-        <p>Strong backend expertise with Node.js, .NET, and database management.</p>
+      <div class="skill-card hidden">
+        <h3>AWS</h3>
+        <p>Skilled in utilizing AWS services such as S3, SQS, SES, SNS, and Lambda for cloud storage, messaging, and serverless computing.</p>
       </div>
+    </div>    
+    <div class="buttons">
+      <button id="readMoreBtn"> <i class="fas fa-chevron-down" id="expandArrow"></i> Show More</button>
+      <button id="showLessBtn" class="hidden"><i class="fas fa-chevron-up hidden" id="collapseArrow"></i> Show Less</button>
     </div>
   </section>
 
@@ -40,14 +60,28 @@
     <h2>Contact</h2>
     <p>Feel free to reach out to me:</p>
     <ul class="contact-links">
-      <li><a href="mailto:yourname@example.com">Email: kansakar.prasanna@gmail.com</a></li>
-      <li><a href="https://github.com/Prasanna-Kansakar" target="_blank">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/prasanna-ratna-kansakar-aa94bb1b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoUCCnkmZSRaAoXL0g5hYZg%3D%3D" target="_blank">LinkedIn</a></li>
+      <li>
+        <a href="mailto:kansakar.prasanna@gmail.com">
+          <i class="fas fa-envelope"></i> Email: kansakar.prasanna@gmail.com
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Prasanna-Kansakar" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/prasanna-ratna-kansakar-aa94bb1b5" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </li>
     </ul>
   </section>
 
   <footer class="footer">
     <p>&copy; 2024 Prasanna Ratna Kansakar. All rights reserved.</p>
   </footer>
+
+  <script src="public/js/script.js"></script>
 </body>
 </html>
